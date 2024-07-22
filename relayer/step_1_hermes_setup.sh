@@ -27,7 +27,7 @@ hermes -c ./config.toml keys list mars
 
 # Open Channel
 echo "Open Channel between Babylon and Mars"
-hermes -c ./relayer/config.toml create channel babylon mars --port-a transfer --port-b transfer
+hermes -c ./relayer/config.toml create channel bbn mars --port-a transfer --port-b transfer
 
 # Start the Relayer
 echo "Start Relaying using Hermes"
