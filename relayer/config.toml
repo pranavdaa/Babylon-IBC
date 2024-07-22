@@ -12,13 +12,13 @@ host = '127.0.0.1'
 port = 4011
 
 [[chains]]
-id = 'babylon'
+id = 'bbn'
 rpc_addr = 'https://rpc-euphrates.devnet.babylonchain.io:443'
-#grpc_addr = 'http://127.0.0.1:9095'
-#websocket_addr = 'ws://localhost:26659/websocket'
+grpc_addr = 'https://rpc-euphrates.devnet.babylonchain.io:443'
+websocket_addr = 'https://lcd-euphrates.devnet.babylonchain.io:443'
 rpc_timeout = '10s'
 account_prefix = 'Euphrates'
-key_name = 'BBN'
+key_name = 'bbn'
 store_prefix = 'ibc'
 max_gas = 2000000
 gas_price = { price = 0.001, denom = 'ubbn' }
@@ -29,8 +29,8 @@ trust_threshold = { numerator = '1', denominator = '3' }
 
 [[chains]]
 id = 'mars'
-rpc_addr = 'http://127.0.0.1:26559'
-grpc_addr = 'http://127.0.0.1:9096'
+rpc_addr = 'http://0.0.0.0:26657'
+grpc_addr = 'http://0.0.0.0:1317'
 websocket_addr = 'ws://localhost:26559/websocket'
 rpc_timeout = '10s'
 account_prefix = 'mars'

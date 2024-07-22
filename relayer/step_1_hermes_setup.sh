@@ -9,8 +9,8 @@ trap 'read -p "run: $BASH_COMMAND"' DEBUG
 # Add keys
 
 # Babylon key
-echo "Add babylon tellurian key"
-hermes -c ./config.toml keys add babylon -f ./babylon_tellurian_key.json 
+echo "Add babylon pranav key"
+hermes -c ./config.toml keys add bbn -f ./babylon_pranav_key.json 
 
 # Mars key
 echo "Add mars greenman key"
@@ -18,7 +18,7 @@ hermes -c ./config.toml keys add mars -f ./mars_greenman_key.json
 
 # List keys
 echo "List keys"
-hermes -c ./config.toml keys list babylon
+hermes -c ./config.toml keys list bbn
 hermes -c ./config.toml keys list mars
 
 #----------------------------------------------------
